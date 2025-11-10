@@ -1,0 +1,484 @@
+{
+	"info": {
+		"_postman_id": "80cf59cc-bbc8-432b-ac8f-0a1d30259155",
+		"name": "Spring Security 6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29035908"
+	},
+	"item": [
+		{
+			"name": "Actuator",
+			"item": [
+				{
+					"name": "Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/info",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/health",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Metrics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/metrics",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"metrics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Env",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/env",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"env"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Beans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/beans",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"beans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mappings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/mappings",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"mappings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "configprops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/configprops",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"configprops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loggers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/loggers",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"loggers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/logfile",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"logfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "threaddump",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/threaddump",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"threaddump"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "scheduledtasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/scheduledtasks",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"scheduledtasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/caches",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"caches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auditevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/auditevents",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"auditevents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "httpexchanges",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/httpexchanges",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"httpexchanges"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sessions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/sessions",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shutdown",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/actuator/shutdown",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"actuator",
+								"shutdown"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/welcome",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/myAccount",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"myAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/myBalance",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"myBalance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Loans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/myLoans",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"myLoans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/myCards",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"myCards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/notices",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"notices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/contact",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "password",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host_url",
+			"value": ""
+		}
+	]
+}
