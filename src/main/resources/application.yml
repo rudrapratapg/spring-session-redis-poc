@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+logging:
+  pattern:
+    console: "${LOG_PATTERN_CONSOLE:}%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) %cyan(${spring.application.name}) - %msg%n%throwable}"
+  level:
+    org:
+      springframework:
+        session: DEBUG
+        security: DEBUG
+# If you want to enable Spring Security TRACE logging via env var, uncomment below and set LOG_LEVEL_SPRING_SECURITY
+#        security: "${LOG_LEVEL_SPRING_SECURITY:TRACE}"
+
+#spring:
+#  security:
+#    user:
+#      name: "${USRNAME:user}"
+#      password: "${PSWRD:password}"
+
+spring:
+  application:
+    name: ${SPRING_APP_NAME:eazybank-backend}
+  data:
+    redis:
+      host: "${REDIS_HOST}"
+      port: "${REDIS_PORT}"
+      password: "${REDIS_PSWD}"
+  session:
+    redis:
+      save-mode: always
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+    info:
+      access: read_only
