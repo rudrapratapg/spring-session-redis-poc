@@ -1,18 +1,13 @@
 package com.deepak.spring_sec1.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
-
-import javax.sql.DataSource;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
@@ -52,10 +47,13 @@ public class ProjectConfig {
 //        return new InMemoryUserDetailsManager(user, admin);
 //    }
 
-    @Bean
-    public UserDetailsService userDetailsService(@Autowired DataSource dataSource) {
-        return new JdbcUserDetailsManager(dataSource);
-    }
+//    We can not use this default UserDetailsService if we are implementing a custom user details service
+//    spring will get confused on which bean/service to use
+//    @Bean
+//    public UserDetailsService userDetailsService(@Autowired DataSource dataSource) {
+//        return new JdbcUserDetailsManager(dataSource);
+//    }
+//    We have created a Bean of type UserDetailsService named as `EazyBankUserDetailsService` and annotated it with @Service to make it a bean
 
     @Bean
     public PasswordEncoder passwordEncoder() {
